@@ -1,0 +1,29 @@
+.search-icon{
+    cursor: pointer;
+    font-size: 1.5em;
+    &:hover{
+        color: $hover-color;
+        transition: .4s;
+    }
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+    background-color: transparent;
+    padding: 8px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #1a1a2e;
+    padding: 5px;
+    width: 200px; 
+
+
+  }
+  

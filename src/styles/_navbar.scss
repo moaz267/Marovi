@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding-block: 1.5em;
+    background-color:transparent;
+    z-index: 22;
+    & ul {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+    }
+
+    & a {
+        position: relative;
+        color: $dark-color;
+        font-weight: 600;
+        font-size:medium;
+    }
+
+    & a:hover {
+        color: $hover-color;
+        transition: .4s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: $hover-color;
+            transition: .4s;
+}
+}
+.log{
+    cursor: pointer;
+    font-size: 1.6em;
+}
+}

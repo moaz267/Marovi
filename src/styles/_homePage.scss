@@ -1,0 +1,15 @@
+.mpage{
+    position: sticky; 
+    top: 0;  
+    z-index: 1;
+}
+.home{
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}

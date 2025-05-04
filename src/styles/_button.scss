@@ -1,0 +1,62 @@
+.custom_btn {
+    width: fit-content;
+    background: transparent;
+    border: 0;
+    height: 3em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    transition: .4s;
+    .custom_btn_text {
+        background: $main-color;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: .8em 1em;
+        gap: .5em;
+        border-radius: 2em;
+        transition: .4s;
+        .loader-spinner {
+            color: #fff;
+            animation: loader 4s infinite alternate;
+        }
+        p{
+            color: #fff;
+            text-transform: capitalize;
+        }
+    }
+    .custom_btn_arrow{
+        width: 3em;
+        height: 3em;
+        background: $main-color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .4s;
+        svg {
+            color: #fff;
+        }
+    }
+    &:hover {
+        gap: 0;
+        .custom_btn_text {
+             border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        }
+        .custom_btn_arrow {
+             border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        }
+    }
+}
+
+@keyframes loader {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

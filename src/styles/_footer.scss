@@ -1,0 +1,45 @@
+.footer{
+    padding-block: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    color: $gray-bg;
+    background: $dark-color;
+    .footer_logo{
+        width: 50%;
+        h4{
+            font-weight: 500;
+            margin-bottom: 1em;
+        }
+        p{
+            color: rgba($color:  $gray-bg, $alpha: .5);
+        }
+    }
+    .footer_logo_contact{
+        h6{
+            font-weight: 500;
+            margin-bottom: 1.5em;
+        }
+        .footer_logo_contact_social{
+            display: flex;
+            gap: 1.5em;
+            align-items: center;
+            svg{
+                font-size: 1.5em;
+            }
+        }
+    }
+    .footer_logo_bottom{
+        padding-top: 1.5em;
+        border-top: 1px solid rgba($color: $gray-bg, $alpha: .2);
+        text-align: center;
+        width: 100%;
+        p{
+            font-size: .9em;
+            span{
+                font-weight: 500;
+                color: $main-color;
+            }
+        }
+    }
+}

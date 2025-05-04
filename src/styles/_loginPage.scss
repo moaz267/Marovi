@@ -1,0 +1,19 @@
+.login_page{
+    padding-block: 4em;
+    h6{
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align:center;
+    }
+    form{
+        width: 50%;
+        margin: auto;
+        .login_footer{
+            margin-top: 1em;
+            color: rgba($color: $dark-color, $alpha: .5);
+            a{
+                color: rgba($color: $dark-color, $alpha: 1);
+            }
+        }
+    }
+}
