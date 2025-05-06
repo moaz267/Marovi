@@ -1,5 +1,6 @@
 import React from 'react'
 import ModernButton from '../ModernButton/ModernButton'
+import { Link } from 'react-router-dom'
 export default function WrapperSlider({src,text,p}) {
   return (
     <div className="container">
@@ -13,7 +14,9 @@ export default function WrapperSlider({src,text,p}) {
             </div>
             <div className="btn">
                 {/* <button className="btn1">FIND OUT MORE </button> */}
-                    <ModernButton />
+                <Link to={"/pages"} >
+                <ModernButton /> 
+                </Link>
             </div>
         </div>
     </div>

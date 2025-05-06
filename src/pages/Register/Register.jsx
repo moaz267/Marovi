@@ -5,7 +5,7 @@ import WrapperInput from '../../components/wrapperInput/WrapperInput';
 import Button from '../../components/button/Button';
 import { useMutation } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
-
+import Footer  from '../../components/Footer/Footer'
 export default function Register() {
   const navigate = useNavigate();
   const registerMutation = useMutation({
@@ -75,6 +75,7 @@ export default function Register() {
                   </p>
               </Form>
           </Formik>
+          <Footer />
       </div>
   );
 }

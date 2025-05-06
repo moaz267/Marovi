@@ -3,6 +3,7 @@ $dark-color:#000;
 $gray-color-text:rgba(0,0,0,.5);
 $gray-bg:#F2F2F2;
 $hover-color:#fd8f5f;
+$light-color:#ffffff;
 
 // loader
 $line-width: 1px;
@@ -13,3 +14,8 @@ $animation-duration: 55s;
 // dark and light mode 
 $dark-mode:#000;
 $light-mode:#fff;
+
+$primary-color: #1d4ed8; /* اللون الأزرق الأساسي */
+$secondary-color: #10b981; /* اللون الأخضر */
+$hover-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+$border-radius: 0.5rem; /* نصف القطر للزوايا الدائرية */

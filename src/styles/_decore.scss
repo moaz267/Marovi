@@ -1,0 +1,97 @@
+.contain {
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  background-color: $dark-color;
+}
+
+p {
+  color: $light-color;
+  font-size: 1.3rem; // تكبير الخط
+  line-height: 1.8;
+}
+
+span {
+  color: #a05612;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  .split1,
+  .split2 {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    background-color: $dark-color;
+    border-radius: 20px; // حواف أكبر
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); // ظل أكبر
+  }
+
+  .split1 {
+    order: 1;
+
+    .article {
+      order: 1;
+      padding: 2rem; // مساحة داخلية أكبر
+      background-color: $dark-color;
+    }
+
+    img {
+      order: 2;
+      width: 100%;
+      height: 500px; // تكبير الصورة
+      object-fit: cover;
+    }
+  }
+
+  .split2 {
+    order: 2;
+
+    img {
+      order: 1;
+      width: 100%;
+      height: 500px; // تكبير الصورة
+      object-fit: cover;
+    }
+
+    .article {
+      order: 2;
+      padding: 2rem;
+      background-color: $dark-color;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+
+    .split1,
+    .split2 {
+      width: 100%;
+    }
+  }
+
+  .contain {
+    padding: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  span {
+    font-size: 0.95rem;
+  }
+
+  .split1 img,
+  .split2 img {
+    height: 250px; // حجم أصغر يناسب الموبايل
+  }
+}

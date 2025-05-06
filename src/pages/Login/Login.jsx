@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import Button from "../../components/button/Button";
-
+import Footer  from '../../components/Footer/Footer'
 export default function Login() {
     const navigate =useNavigate()
     const loginMutation = useMutation({
@@ -78,6 +78,7 @@ export default function Login() {
                     </p>
                 </Form>
             </Formik>
+            <Footer />
         </div>
     );
 }

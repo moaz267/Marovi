@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furnatures",
+  "info": {
+    "singularName": "furnature",
+    "pluralName": "furnatures",
+    "displayName": "furnature "
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
